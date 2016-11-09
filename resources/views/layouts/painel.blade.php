@@ -11,11 +11,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{asset('dist/css/font-awesome/font-awesome.min.css')}}">
   <link rel="stylesheet" href="{{asset('dist/css/ionicons/ionicons.min.css')}}">
-  <link rel="stylesheet" href="{{asset('plugins/jvectormap/jquery-jvectormap-1.2.2.css')}}">
   <link rel="stylesheet" href="{{asset('dist/css/jquery-ui.css')}}">
   <link rel="stylesheet" href="{{asset('dist/css/adminlte/AdminLTE.min.css')}}">
-  <link rel="stylesheet" href="{{asset('dist/css/skins/_all-skins.css')}}">
-  <link rel="stylesheet" href="{{asset('dist/css/sweetalert/sweetalert2.min.css')}}">
+  <link rel="stylesheet" href="{{asset('dist/css/skins/_all-skins.min.css')}}">
 
   <link rel="stylesheet" href="{{asset('dist/css/jquery.dataTables.min.css')}}">
   <link rel="stylesheet" href="{{asset('dist/css/bootstrap.min.css')}}">
@@ -128,13 +126,10 @@
 {{--plugins--}}
 <script src="{{asset('plugins/jQuery/jquery-2.2.3.min.js')}}"></script>
 <script src="{{asset('plugins/datepicker/bootstrap-datepicker.js')}}"></script>
-<script src="{{asset('plugins/timepicker/bootstrap-timepicker.min.js')}}"></script>
 
 <script src="{{asset('dist/js/jquery-ui.js')}}"></script>
 <script src="{{asset('dist/js/bootstrap/bootstrap.min.js')}}"></script>
 <script src="{{asset('dist/js/adminlte/app.min.js')}}"></script>
-<script src="{{asset('dist/js/adminlte/demo.js')}}"></script>
-<script src="{{asset('dist/js/sweetalert/sweetalert2.min.js')}}"></script>
 
 <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
