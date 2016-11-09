@@ -64,8 +64,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="{{ route('painel.index')  }}"><i class="fa fa-circle-o"></i> Listagem</a></li>
-            <li><a href="{{ route('painel.index')  }}"><i class="fa fa-circle-o"></i> Novo Sócio</a></li>
+            <li class="active"><a href="{{ route('partners.index')  }}"><i class="fa fa-circle-o"></i> Listagem</a></li>
+            <li><a href="{{ route('partners.new')  }}"><i class="fa fa-circle-o"></i> Novo Sócio</a></li>
           </ul>
         </li>
 
@@ -77,8 +77,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="{{ route('painel.index')  }}"><i class="fa fa-circle-o"></i> Listagem</a></li>
-            <li class="active"><a href="{{ route('painel.index')  }}"><i class="fa fa-circle-o"></i> Nova Empresa</a></li>
+            <li class="active"><a href="{{ route('companies.index')  }}"><i class="fa fa-circle-o"></i> Listagem</a></li>
+            <li class="active"><a href="{{ route('companies.new')  }}"><i class="fa fa-circle-o"></i> Nova Empresa</a></li>
           </ul>
         </li>
 
@@ -110,9 +110,6 @@
             {{ session('error') }}
         </div>
     @endif
-      <h1>
-        @yield('title')
-      </h1>
 
     </section>
 

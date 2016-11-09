@@ -1,11 +1,13 @@
 $( document ).ready(function() {
-      $('.datatable-format').DataTable();
-      $('.datepicker').datepicker({
-        autoclose: true,
-        dateFormat: 'dd/mm/yy'
-      });
-
     $('.datatable-format').DataTable({
+        "paging": false,
+        "ordering": false,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
         "language": {
             "sLoadingRecords": "Carregando...",
             "sProcessing": "Processando...",
@@ -18,13 +20,10 @@ $( document ).ready(function() {
             "paginate": {
                 "previous": "Anterior",
                 "next": "Proxima"
+
             }
+
         },
-        "initComplete": function () {
-            var api = this.api();
-            api.$('td.click-search').click( function () {
-                api.search( $(this).text().trim()).draw();
-            } );
-        }
+
     });
 });

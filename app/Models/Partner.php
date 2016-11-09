@@ -13,4 +13,9 @@ class Partner extends Model
     {
         return $this->belongsTo('App\Models\Company');
     }
+
+    public function getCompanyRazaoAttribute()
+    {
+        return $this->company->razao_social;
+    }
 }
