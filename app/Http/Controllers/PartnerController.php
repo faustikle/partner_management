@@ -15,6 +15,21 @@ class PartnerController extends Controller
         return view('partners.index', compact('partners'));
     }
 
+    public function search(Request $request)
+    {
+        $cpfSearched = $request->input('cpf');
+
+        if($cpfSearched == '') {
+            return redirect()->action('PartnerController@index');
+        }
+
+        $partners = Partner::where('cpf', 'like', '%'.$cpfSearched.'%')
+            ->with('company')
+            ->get();
+
+        return view('partners.index', compact('partners'));
+    }
+
     public function new()
     {
         $companies = $this->comboCompanies();

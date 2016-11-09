@@ -11,7 +11,7 @@ class CreatePartnersTable extends Migration
         Schema::create('partners', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->string('cpf', 11)->unique();
+            $table->string('cpf', 14)->unique();
             $table->string('nome', 50);
             $table->string('email');
             $table->integer('company_id')->unsigned();

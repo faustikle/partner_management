@@ -21,24 +21,20 @@
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
-  <div class="login-logo">
-    <a href="{{ route('home.index')  }}"><b>Gerenciador de</b> Sócios</a>
-  </div>
+  <div class="login-logo"><b>Gerenciador de</b> Sócios</div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Entre com login e senha</p>
+    <p class="login-box-msg">Entre com e-mail e senha</p>
         @yield('content')
   </div>
   <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
 
-<!-- jQuery 2.2.3 -->
-<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="../../bootstrap/js/bootstrap.min.js"></script>
-<!-- iCheck -->
-<script src="../../plugins/iCheck/icheck.min.js"></script>
+<script src="{{asset('plugins/jQuery/jquery-2.2.3.min.js')}}"></script>
+<script src="{{asset('dist/js/bootstrap/bootstrap.min.js')}}"></script>
+<script src="{{asset('plugins/iCheck/icheck.min.js')}}"></script>
+
 <script>
   $(function () {
     $('input').iCheck({

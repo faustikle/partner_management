@@ -42,7 +42,7 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav" title="Sair">
           <li>
-            <a href="{{route('painel.index')}}">
+            <a href="{{route('painel.logout')}}">
               Sair <i class="fa fa-sign-out"></i>
             </a>
           </li>
@@ -79,19 +79,6 @@
           <ul class="treeview-menu">
             <li class="active"><a href="{{ route('companies.index')  }}"><i class="fa fa-circle-o"></i> Listagem</a></li>
             <li class="active"><a href="{{ route('companies.new')  }}"><i class="fa fa-circle-o"></i> Nova Empresa</a></li>
-          </ul>
-        </li>
-
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-book"></i> <span>Usuários</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="{{ route('painel.index')  }}"><i class="fa fa-circle-o"></i> Listagem</a></li>
-            <li class="active"><a href="{{ route('painel.index')  }}"><i class="fa fa-circle-o"></i> Novo Usuário</a></li>
           </ul>
         </li>
       </ul>

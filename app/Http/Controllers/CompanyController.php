@@ -15,6 +15,19 @@ class CompanyController extends Controller
         return view('companies.index', compact('companies'));
     }
 
+    public function search(Request $request)
+    {
+        $cnpjSearched = $request->input('cnpj');
+
+        if($cnpjSearched == '') {
+            return redirect()->action('CompanyController@index');
+        }
+
+        $companies = Company::where('cnpj', 'like', '%'.$cnpjSearched.'%')->get();
+
+        return view('companies.index', compact('companies'));
+    }
+
     public function new()
     {
         $action = route('companies.create');

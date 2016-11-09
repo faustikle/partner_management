@@ -31,7 +31,7 @@
                     <select name="company" class="form-control">
                         <option value=''></option>
                         @foreach($companies as $id => $razao)
-                            <option {{ ($partner->company_id == $id) ? 'selected' : '' }} value='{{$id}}'>{{$razao}}</option>
+                            <option {{ (isset($partner) && $partner->company_id == $id) ? 'selected' : '' }} value='{{$id}}'>{{$razao}}</option>
                         @endforeach
                     </select>
                   </div>
